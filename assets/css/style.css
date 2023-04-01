@@ -30,7 +30,7 @@
     --ar-danger: #ed5050;
     --ar-light: #fff;
     --ar-dark: #121519;
-    --ar-primary-rgb: 68, 140, 116;
+    --ar-primary-rgb: 254, 1, 0;
     --ar-secondary-rgb: 237, 241, 245;
     --ar-success-rgb: 63, 202, 144;
     --ar-info-rgb: 63, 127, 202;
@@ -6861,7 +6861,7 @@ fieldset:disabled .btn {
 
 .text-bg-primary {
     color: #000 !important;
-    background-color: RGBA(68, 140, 116, var(--ar-bg-opacity, 1)) !important
+    background-color: RGBA(254, 1, 0, var(--ar-bg-opacity, 1)) !important
 }
 
 .text-bg-secondary {
