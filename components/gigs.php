@@ -22,7 +22,7 @@
                             </ul>
                         </div>
                         <div class="card-footer border-0 pt-0">
-                            <button class="btn btn-outline-primary w-100" type="button">Buy now</button>
+                            <button class="btn btn-outline-primary w-100" type="button">I'm interested</button>
                         </div>
                     </div>
                 </div>
@@ -45,7 +45,7 @@
                             </ul>
                         </div>
                         <div class="card-footer border-0 pt-0">
-                            <button class="btn btn-outline-primary w-100" type="button">Buy now</button>
+                            <button class="btn btn-outline-primary w-100" type="button">I'm interested</button>
                         </div>
                     </div>
                 </div>
@@ -68,7 +68,7 @@
                             </ul>
                         </div>
                         <div class="card-footer border-0 pt-0">
-                            <button class="btn btn-outline-primary w-100" type="button">Buy now</button>
+                            <button class="btn btn-outline-primary w-100" type="button">I'm interested</button>
                         </div>
                     </div>
                 </div>
@@ -91,7 +91,7 @@
                             </ul>
                         </div>
                         <div class="card-footer border-0 pt-0">
-                            <button class="btn btn-outline-primary w-100" type="button">Buy now</button>
+                            <button class="btn btn-outline-primary w-100" type="button">I'm interested</button>
                         </div>
                     </div>
                 </div>
@@ -114,7 +114,7 @@
                             </ul>
                         </div>
                         <div class="card-footer border-0 pt-0">
-                            <button class="btn btn-outline-primary w-100" type="button">Buy now</button>
+                            <button class="btn btn-outline-primary w-100" type="button">I'm interested</button>
                         </div>
                     </div>
                 </div>
@@ -137,7 +137,7 @@
                             </ul>
                         </div>
                         <div class="card-footer border-0 pt-0">
-                            <button class="btn btn-outline-primary w-100" type="button">Buy now</button>
+                            <button class="btn btn-outline-primary w-100" type="button">I'm interested</button>
                         </div>
                     </div>
                 </div>
@@ -160,7 +160,7 @@
                             </ul>
                         </div>
                         <div class="card-footer border-0 pt-0">
-                            <button class="btn btn-outline-primary w-100" type="button">Buy now</button>
+                            <button class="btn btn-outline-primary w-100" type="button">I'm interested</button>
                         </div>
                     </div>
                 </div>
@@ -183,7 +183,7 @@
                             </ul>
                         </div>
                         <div class="card-footer border-0 pt-0">
-                            <button class="btn btn-outline-primary w-100" type="button">Buy now</button>
+                            <button class="btn btn-outline-primary w-100" type="button">I'm interested</button>
                         </div>
                     </div>
                 </div>
@@ -206,7 +206,7 @@
                             </ul>
                         </div>
                         <div class="card-footer border-0 pt-0">
-                            <button class="btn btn-outline-primary w-100" type="button">Buy now</button>
+                            <button class="btn btn-outline-primary w-100" type="button">I'm interested</button>
                         </div>
                     </div>
                 </div>
