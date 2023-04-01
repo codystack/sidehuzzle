@@ -5,7 +5,7 @@ include "./components/header.php";
                 <a class="text-nav btn btn-icon bg-light border rounded-circle position-absolute top-0 end-0 p-0 mt-3 me-3 mt-sm-4 me-sm-4" href="./" data-bs-toggle="tooltip" data-bs-placement="left" title="Back to home"><i class="ai-home"></i></a>
                 <div class="d-flex flex-column align-items-center w-lg-50 h-100 px-3 px-lg-5 pt-5">
                 <div class="w-100 mt-auto" style="max-width: 526px;">
-                    <h1>No account? Sign up</h1>
+                    <h1>Create Account</h1>
                     <p class="pb-3 mb-3 mb-lg-4">Have an account already?&nbsp;&nbsp;<a href='login'>Sign in here!</a></p>
                     <form class="needs-validation" novalidate>
                     <div class="row row-cols-1 row-cols-sm-2">
