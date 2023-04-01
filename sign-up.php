@@ -11,22 +11,29 @@ include "./components/header.php";
                     <form class="needs-validation" novalidate>
                     <div class="row row-cols-1 row-cols-sm-2">
                         <div class="col mb-4">
-                        <input class="form-control form-control-lg" type="text" placeholder="Your name" required>
+                            <input class="form-control form-control-lg" type="text" placeholder="First name" required>
                         </div>
                         <div class="col mb-4">
-                        <input class="form-control form-control-lg" type="email" placeholder="Email address" required>
+                            <input class="form-control form-control-lg" type="text" placeholder="Last name" required>
                         </div>
+                    </div>
+                    <div class="mb-4">
+                        <input class="form-control form-control-lg" type="tel" placeholder="Phone" required>
+                    </div>
+                    <div class="mb-4">
+                        <input class="form-control form-control-lg" type="email" placeholder="Email address" required>
+                    </div>
+                    <div class="mb-4">
+                        <select class="form-select form-select-lg" required id="categories">
+                            <option selected>Select account type</option>
+                            <option value="Reseller">Reseller</option>
+                            <option value="Merchant">Merchant</option>
+                        </select>
                     </div>
                     <div class="password-toggle mb-4">
                         <input class="form-control form-control-lg" type="password" placeholder="Password" required>
                         <label class="password-toggle-btn" aria-label="Show/hide password">
-                        <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"></span>
-                        </label>
-                    </div>
-                    <div class="password-toggle mb-4">
-                        <input class="form-control form-control-lg" type="password" placeholder="Confirm password" required>
-                        <label class="password-toggle-btn" aria-label="Show/hide password">
-                        <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"></span>
+                            <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"></span>
                         </label>
                     </div>
                     <div class="pb-4">
