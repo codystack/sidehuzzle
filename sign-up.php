@@ -58,5 +58,6 @@ include "./components/header.php";
         <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
         <script src="assets/js/main.js"></script>
+        <script src="jsauth/signup.js?<?php echo time();?>"></script>
     </body>
 </html>
