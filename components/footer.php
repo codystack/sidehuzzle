@@ -8,7 +8,6 @@
                     </a>
                     <ul class="nav justify-content-center py-1 pb-sm-2">
                         <li class="nav-item"><a class="nav-link py-2 px-3 mx-1" href="terms">Terms of Service</a></li>
-                        <li class="nav-item"><a class="nav-link py-2 px-3 mx-1" href="privacy">Privacy Policy</a></li>
                         <li class="nav-item"><a class="nav-link py-2 px-3 mx-1" href="about">About Us</a></li>
                         <li class="nav-item"><a class="nav-link py-2 px-3 mx-1" href="contact">Contact Us</a></li>
                     </ul>
