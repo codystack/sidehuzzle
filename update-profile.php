@@ -175,7 +175,6 @@ if (isset($_GET['logout'])) {
                         }
                     }
                 ?>
-                 <?php if($accounType=='Reseller'){echo 'true';}?>
                 <div class="card-body <?php if($accountType=='Merchant'){echo 'd-none';}else{ echo'd-unset';}?>">
                     <div class="d-flex align-items-center">
                         <div class="">
@@ -537,13 +536,13 @@ if (isset($_GET['logout'])) {
                     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" class="needs-validation" novalidate>
                         <div class="row g-3 g-sm-4 mt-0 mt-lg-2">
                             <div class="col-sm-6 mb-2 d-none">
-                                <input class="form-control" type="text" name="userID" value="<?php echo $_SESSION['id'];?>" disabled>
+                                <input class="form-control" type="text" name="userID" value="<?php echo $_SESSION['id'];?>">
                             </div>
                             <div class="col-sm-6 mb-2">
-                                <input class="form-control" type="text" placeholder="Company Name" id="fn" required>
+                                <input class="form-control" type="text" placeholder="Company Name" name="companyName" required>
                             </div>
                             <div class="col-sm-6 mb-2">
-                                <select class="form-select" id="language" required>
+                                <select class="form-select" name="businessType" required>
                                     <option value="" selected="" disabled="">Select Business Type</option>
                                     <option value="Retailer">Retailer</option>
                                     <option value="Manufacturer">Manufacturer</option>
@@ -551,16 +550,16 @@ if (isset($_GET['logout'])) {
                                 </select>
                             </div>
                             <div class="col-sm-6 mb-2">
-                                <input class="form-control" type="text" placeholder="Business Address" id="ln" required>
+                                <input class="form-control" type="text" placeholder="Business Address" name="businessAddress" required>
                             </div>
                             <div class="col-sm-6 mb-2">
-                                <input class="form-control" type="text" placeholder="City" id="email" required>
+                                <input class="form-control" type="text" placeholder="City" name="city" required>
                             </div>
                             <div class="col-sm-6 mb-2">
-                                <input class="form-control" type="text" placeholder="State/Province" id="email" required>
+                                <input class="form-control" type="text" placeholder="State/Province" name="state" required>
                             </div>
                             <div class="col-sm-6">
-                                <select class="form-select" id="country" required>
+                                <select class="form-select" name="country" required>
                                     <option value="" selected="" disabled="">Select Country</option>
                                     <option value="Afghanistan">Afghanistan</option>
                                     <option value="Åland Islands">Åland Islands</option>
@@ -809,29 +808,29 @@ if (isset($_GET['logout'])) {
                                 </select>
                             </div>
                             <div class="col-sm-6 mb-2">
-                                <input class="form-control" type="text" placeholder="Postal Code" id="email" required>
+                                <input class="form-control" type="text" placeholder="Postal Code" name="postalCode" required>
                             </div>
                             <div class="col-sm-6 mb-2">
-                                <input class="form-control" type="text" placeholder="Business Email" id="email" required>
+                                <input class="form-control" type="text" placeholder="Business Email" name="businessEmail" required>
                             </div>
                             <div class="col-sm-6 mb-2">
-                                <input class="form-control" type="text" placeholder="Business Phone" id="email" required>
+                                <input class="form-control" type="text" placeholder="Business Phone" name="businessPhone" required>
                             </div>
                             <div class="col-sm-6 mb-2">
-                                <input class="form-control" type="text" placeholder="Website URL" id="email" required>
+                                <input class="form-control" type="text" placeholder="Website URL" name="websiteURL">
                             </div>
                             <div class="col-sm-6 mb-2">
-                                <input class="form-control" type="text" placeholder="Commission Rate" id="email" required>
+                                <input class="form-control" type="text" placeholder="Commission Rate" name="commissionRate" required>
                             </div>
                             <div class="col-sm-6 mb-2">
-                                <select class="form-select" id="language" required>
+                                <select class="form-select" name="paymentMethod" required>
                                     <option value="" selected="" disabled="">Preferred Payment Method</option>
                                     <option value="PayPal">PayPal</option>
                                     <option value="Bank Transfer">Bank Transfer</option>
                                 </select>
                             </div>
                             <div class="col-12 mb-2">
-                                <textarea class="form-control" rows="5" placeholder="Enter a brief description of the products/services you offer" id="bio" required></textarea>
+                                <textarea class="form-control" rows="5" placeholder="Enter a brief description of the products/services you offer" name="description" required></textarea>
                             </div>
                             <div class="col-12">
                                 <div class="form-check my-2">
@@ -840,7 +839,7 @@ if (isset($_GET['logout'])) {
                                 </div>
                             </div>
                             <div class="col-12 d-flex justify-content-end pt-3">
-                                <button class="btn btn-primary ms-3" type="submit">Save changes</button>
+                                <button class="btn btn-primary ms-3" type="submit" name="merchant_update_btn">Save changes</button>
                             </div>
                         </div>
                     </form>

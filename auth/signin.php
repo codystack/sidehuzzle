@@ -45,6 +45,5 @@ if (isset($_POST['login_btn'])) {
         }
     } else {
         $_SESSION['error_message'] = "Incorrect Login Details";
-        echo "<meta http-equiv='refresh' content='5; URL=login'>";
     }
 }
