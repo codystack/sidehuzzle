@@ -1,6 +1,6 @@
-    <section class="pb-5 pt-3 pt-sm-4 pt-lg-5 my-xl-3 my-xxl-5 bg-secondary" id="gigs">
+    <section class="pb-5 pt-3 pt-sm-4 pt-lg-5 mb-xl-3 mb-xxl-5 bg-secondary" id="gigs">
         <div class="container py-5">
-            <h2 class="h1 text-center">Industries we work in</h2>
+            <h2 class="h1 text-center">Explore the <span class="text-primary">Gigs</span> at your<br>fingertips</h2>
             <p class="text-center pb-4 mb-2 mb-lg-3">We have been helping businesses in the following industries for over a decade</p>
             <div class="row">
                 <!-- Item-->

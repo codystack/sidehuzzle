@@ -1,3 +1,18 @@
+<?php
+//Connect Database
+include ('./config/db.php');
+
+session_start();
+if (!isset($_SESSION['email'])) {
+    header('location: login');
+}
+if (isset($_GET['logout'])) {
+    session_destroy();
+    unset($_SESSION['email']);
+    header("location: login");
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -133,7 +148,7 @@
 
     </head>
   
-    <body>
+    <body class="bg-secondary">
 
         <div class="page-loading active">
             <div class="page-loading-inner">

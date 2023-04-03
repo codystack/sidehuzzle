@@ -90,6 +90,7 @@ include "./components/navbar.php";
         </div>
     </section>
 
+    <?php include "./components/gigs.php"; ?>
 
     <section class="container mt-n3 mt-sm-0 pb-5 mb-1 mb-sm-2 mb-lg-3 mb-xl-4 mb-xxl-5 py-5">
         <h2 class="h1 pb-3 mb-lg-4">Browse our categories</h2>
@@ -142,8 +143,6 @@ include "./components/navbar.php";
             </div>
         </div>
     </section>
-
-    <?php include "./components/gigs.php"; ?>
 
     <?php include "./components/cta.php"; ?>
     
