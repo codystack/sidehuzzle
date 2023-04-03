@@ -207,7 +207,7 @@ require_once "./auth/signup.php";
                             </div>
                             <div class="mb-4">
                                 <select class="form-select form-select-lg" required name="accountType">
-                                    <option selected>Select account type</option>
+                                    <option value="" selected="" disabled="">Select account type</option>
                                     <option value="Reseller">Reseller</option>
                                     <option value="Merchant">Merchant</option>
                                 </select>
