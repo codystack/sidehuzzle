@@ -15,22 +15,19 @@ include "./components/dashnav.php";
                         <div class="col-md-4 col-sm-6">
                             <div class="h-100 bg-secondary rounded-3 text-center p-4">
                                 <h6 class="pb-2 mb-1">Earnings (before taxes)</h6>
-                                <div class="h2 text-primary mb-2">$842.00</div>
-                                <p class="fs-sm text-muted mb-0">Sales 8/1/2022 - 8/15/2022</p>
+                                <div class="h2 text-primary mb-2">$0.00</div>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <div class="h-100 bg-secondary rounded-3 text-center p-4">
                                 <h6 class="pb-2 mb-1">Your balance</h6>
-                                <div class="h2 text-primary mb-2">$735.00</div>
-                                <p class="fs-sm text-muted mb-0">To be paid on 8/15/2022</p>
+                                <div class="h2 text-primary mb-2">$0.00</div>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-12">
                             <div class="h-100 bg-secondary rounded-3 text-center p-4">
                                 <h6 class="pb-2 mb-1">Lifetime earnings</h6>
-                                <div class="h2 text-primary mb-2">$9,156.74</div>
-                                <p class="fs-sm text-muted mb-0">Based on list price</p>
+                                <div class="h2 text-primary mb-2">$0.00</div>
                             </div>
                         </div>
                     </div>
