@@ -7,6 +7,39 @@
         </main>
         <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.12/clipboard.min.js"></script>
+        <script src="//code.tidio.co/6b4eftih9m55n7m8az5xz0ufqwtawwle.js" async></script>
         <script src="assets/js/main.js"></script>
+        <script>
+            (function() {
+                function onTidioChatApiReady() {
+                    window.tidioChatApi.hide();
+                    window.tidioChatApi.on("close", function() {
+                    window.tidioChatApi.hide();
+                    });
+                }
+
+                if (window.tidioChatApi) {
+                    window.tidioChatApi.on("ready", onTidioChatApiReady);
+                } else {
+                    document.addEventListener("tidioChat-ready", onTidioChatApiReady);
+                }
+
+                document.querySelector(".chat-button").addEventListener("click", function() {
+                    window.tidioChatApi.show();
+                    window.tidioChatApi.open();
+                });
+            })();
+        </script>
+
+        <!-- Password Matching-->
+        <script>
+            $('#confirmpassword').on('keyup', function () {
+                if ($('#newpassword').val() == $('#confirmpassword').val()) {
+                    $('#message').html('Password matched😜').css('color', 'green');
+                } else
+                    $('#message').html('Password did not match😡').css('color', 'red');
+            });
+        </script>
     </body>
 </html>

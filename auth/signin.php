@@ -21,6 +21,7 @@ if (isset($_POST['login_btn'])) {
         $firstName = $row['firstName'];
         $lastName = $row['lastName'];
         $email = $row['email'];
+        $password = $row['password'];
         $id = $row['id'];
         $status = $row['status'];
         $verified = $row['verified'];
@@ -30,6 +31,7 @@ if (isset($_POST['login_btn'])) {
     }if (mysqli_num_rows($result) == 1) {
         $_SESSION['firstName'] = $firstName;
         $_SESSION['lastName'] = $lastName;
+        $_SESSION['password'] = $password;
         $_SESSION['picture'] = $picture;
         $_SESSION['email'] = $email;
         $_SESSION['phone'] = $phone;

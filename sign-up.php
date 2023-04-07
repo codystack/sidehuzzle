@@ -167,7 +167,8 @@ require_once "./auth/signup.php";
                             if (isset($_SESSION['error_message'])) {
                                 ?>
                                 <div class="alert alert-danger" role="alert">
-                                    <div class="alert-message text-center">
+                                    <div class="alert-message">
+                                        <i class="ai-triangle-alert fs-xl me-2"></i>
                                         <?php
                                         echo $_SESSION['error_message'];
                                         session_destroy();
@@ -182,8 +183,8 @@ require_once "./auth/signup.php";
                             if (isset($_SESSION['success_message'])) {
                                 ?>
                                 <div class="alert alert-success" role="alert">
-                                    <div class="alert-message text-center">
-                                        <?php echo $_SESSION['success_message']; ?>
+                                    <div class="alert-message">
+                                        <i class="ai-circle-check fs-xl me-2"></i> <?php echo $_SESSION['success_message']; ?>
                                     </div>
                                 </div>
                                 <?php
