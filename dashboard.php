@@ -1,4 +1,5 @@
 <?php
+$page = "Dashboard";
 include "./components/dashheader.php";
 include "./components/dashnav.php";
 ?>
