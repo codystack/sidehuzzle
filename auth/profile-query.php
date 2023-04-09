@@ -21,7 +21,7 @@ include "./config/db.php";
             $conn=mysqli_query($conn,"UPDATE users SET firstName='$firstName', lastName='$lastName', email='$email', phone='$phone' where id='".$_SESSION['id']."'");
 
             $_SESSION['success_message'] = "Profile updated 👍";
-            echo "<meta http-equiv='refresh' content='5; URL=profile'>";
+            echo "<meta http-equiv='refresh' content='1; URL=profile'>";
         }
         else
         {
