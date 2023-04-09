@@ -814,7 +814,7 @@ if (isset($_GET['logout'])) {
                                 <input class="form-control" type="text" placeholder="Business Email" name="businessEmail" required>
                             </div>
                             <div class="col-sm-6 mb-2">
-                                <input class="form-control" type="text" placeholder="Business Phone" name="businessPhone" required>
+                                <input class="form-control" type="text" data-format="{&quot;numericOnly&quot;: true, &quot;delimiters&quot;: [&quot;+1 &quot;, &quot; &quot;, &quot; &quot;], &quot;blocks&quot;: [0, 3, 3, 2]}" placeholder="+1 ___ ___ __" name="businessPhone" required>
                             </div>
                             <div class="col-sm-6 mb-2">
                                 <input class="form-control" type="text" placeholder="Website URL" name="websiteURL">

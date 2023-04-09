@@ -201,7 +201,7 @@ require_once "./auth/signup.php";
                                 </div>
                             </div>
                             <div class="mb-4">
-                                <input class="form-control form-control-lg" type="tel" name="phone" placeholder="Phone" required>
+                                <input class="form-control form-control-lg" type="tel" name="phone" data-format="{&quot;numericOnly&quot;: true, &quot;delimiters&quot;: [&quot;+1 &quot;, &quot; &quot;, &quot; &quot;], &quot;blocks&quot;: [0, 3, 3, 2]}" placeholder="+1 ___ ___ __" required>
                             </div>
                             <div class="mb-4">
                                 <input class="form-control form-control-lg" type="email" name="email" placeholder="Email address" required>
