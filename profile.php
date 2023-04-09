@@ -7,20 +7,6 @@ require_once "./auth/profile-query.php";
 
     <?php include "./components/dashmenu.php" ?>
 
-        <?php
-            $select_query = "SELECT * FROM users WHERE id ='".$_SESSION['id']."'";
-            $result = mysqli_query($conn, $select_query);
-            if (mysqli_num_rows($result) > 0) {
-                // output data of each row
-                while($row = mysqli_fetch_assoc($result)) {
-                $id = $row['id'];
-                $picture = $row['picture'];
-                $firstName = $row['firstName'];
-                $lastName = $row['lastName'];
-                $email = $row['email'];
-                $phone = $row['phone'];
-        ?>
-
         <div class="col-lg-9 pt-4 pb-2 pb-sm-4">
             <h1 class="h2 mb-4">Settings</h1>
             <!-- Basic info-->
@@ -31,8 +17,9 @@ require_once "./auth/profile-query.php";
                 </div>
                 <div class="d-flex align-items-center">
                     <div class="dropdown">
-                        <a class="d-flex flex-column justify-content-end position-relative overflow-hidden rounded-circle bg-size-cover bg-position-center flex-shrink-0" href="#" data-bs-toggle="dropdown" aria-expanded="false" style="width: 120px; height: 120px; background-image: url(<?php echo $picture; ?>);">
-                            <span class="d-block text-light text-center lh-1 pb-1" style="background-color: rgba(0,0,0,.5)"><i class="ai-camera"></i></span></a>
+                        <a class="d-flex flex-column justify-content-end position-relative overflow-hidden rounded-circle bg-size-cover bg-position-center flex-shrink-0" href="#" data-bs-toggle="dropdown" aria-expanded="false" style="width: 120px; height: 120px; background-image: url(<?php echo $_SESSION['picture']; ?>);">
+                            <span class="d-block text-light text-center lh-1 pb-1" style="background-color: rgba(0,0,0,.5)"><i class="ai-camera"></i></span>
+                        </a>
                         <div class="dropdown-menu my-1">
                             <button type="button" class="dropdown-item fw-normal" onClick="triggerClick()" id="profileDisplay"><i class="ai-camera fs-base opacity-70 me-2"></i>Upload new photo</button>
                             <!-- <a class="dropdown-item text-danger fw-normal" href="#"><i class="ai-trash fs-base me-2"></i>Delete photo</a> -->
@@ -44,13 +31,26 @@ require_once "./auth/profile-query.php";
                         <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="POST" enctype="multipart/form-data">
                             <div class="row g-3 g-sm-4 mt-0 mt-lg-2">
                                 <div class="col-sm-6" style="display: none;">
-                                    <input type="file" name="picture" value="<?php echo $picture; ?>" onChange="displayImage(this)" id="picture" class="form-control">
+                                    <input type="file" name="picture" value="<?php echo $_SESSION['picture']; ?>" onChange="displayImage(this)" id="picture" class="form-control">
                                 </div>
                             </div>
                             <button class="btn btn-dark mt-2 btn-sm" name="profile_picture_btn" type="submit">Change Picture</button>
                         </form>
                     </div>
                 </div>
+
+                <?php
+                    $select_query = "SELECT * FROM users WHERE id ='".$_SESSION['id']."'";
+                    $result = mysqli_query($conn, $select_query);
+                    if (mysqli_num_rows($result) > 0) {
+                        // output data of each row
+                        while($row = mysqli_fetch_assoc($result)) {
+                        $id = $row['id'];
+                        $firstName = $row['firstName'];
+                        $lastName = $row['lastName'];
+                        $email = $row['email'];
+                        $phone = $row['phone'];
+                ?>
 
                 <?php
                     if (isset($_SESSION['error_message'])) {
@@ -102,13 +102,12 @@ require_once "./auth/profile-query.php";
                         </div>
                     </div>
                 </form>
-                
+                <?php 
+                        } 
+                    }
+                ?>
               </div>
             </section>
         </div>
-
-        <?php } exit();
-            }
-        ?>
 
 <?php include "./components/dashfooter.php"; ?>

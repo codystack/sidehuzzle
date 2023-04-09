@@ -21,7 +21,7 @@ include "./config/db.php";
             $conn=mysqli_query($conn,"UPDATE users SET firstName='$firstName', lastName='$lastName', email='$email', phone='$phone' where id='".$_SESSION['id']."'");
 
             $_SESSION['success_message'] = "Profile updated 👍";
-            echo "<meta http-equiv='refresh' content='1; URL=profile'>";
+            echo "<meta http-equiv='refresh' content='0; URL=profile'>";
         }
         else
         {
@@ -62,6 +62,7 @@ include "./config/db.php";
             copy($_FILES['picture']['tmp_name'], $picture_path);
 
             $_SESSION['success_message'] = "Profile picture updated 👍";
+            echo "<meta http-equiv='refresh' content='0; URL=profile'>";
         }
         else
         {
