@@ -10,6 +10,16 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.12/clipboard.min.js"></script>
         <script src="//code.tidio.co/6b4eftih9m55n7m8az5xz0ufqwtawwle.js" async></script>
         <script src="assets/js/main.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src='https://cdn.jsdelivr.net/npm/moment@2.29.1/min/moment.min.js'></script>
+        <script>
+            function confirmDelete(self) {
+                var id = self.getAttribute("data-id");
+            
+                document.getElementById("form-delete-user").id.value = id;
+                $("#userDeleteModal").modal("show");
+            }
+        </script>
         <script>
             (function() {
                 function onTidioChatApiReady() {
