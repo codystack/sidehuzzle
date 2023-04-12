@@ -129,7 +129,7 @@ include "./components/dashnav.php";
                                             </div>
                                             <div class="col-sm-4 col-md-4 mb-4 mb-md-0">
                                                 <div class="fs-sm fw-medium text-dark mb-1">Youtube:</div>
-                                                <div class="fs-sm"><?php echo $row['youtubeLink']; ?> <i class="ai-copy text-primary"></i></div>
+                                                <div class="fs-sm"><?php echo $row['youtubeLink']; ?></div>
                                             </div>
                                             <div class="col-sm-4 col-md-4 mb-4 mb-md-0">
                                                 <div class="fs-sm fw-medium text-dark mb-1">Others:</div>
