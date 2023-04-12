@@ -100,9 +100,9 @@ include "./components/dashnav.php";
                                                 <tr>
                                                     <td class="border-0 py-1 px-0">
                                                         <div class="d-flex align-items-center">
-                                                            <a class="d-inline-block flex-shrink-0 bg-secondary rounded-1 p-md-2 p-lg-3" href="shop-single.html">
-                                                                <img src="assets/img/shop/cart/01.png" width="110" alt="Product">
-                                                            </a>
+                                                            <div class="d-inline-block flex-shrink-0 bg-secondary" style="width: 150px">
+                                                                <img src="<?php echo $row['postAD']; ?>" class="rounded-1" width="100%" alt="Gig Ad">
+                                                            </div>
                                                             <div class="ps-3 ps-sm-4">
                                                                 <h4 class="h6 mb-2"><a href="shop-single.html">Candle in concrete bowl</a></h4>
                                                                 <div class="text-muted fs-sm me-3">Color: <span class="text-dark fw-medium">Gray night</span></div>
