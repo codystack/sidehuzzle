@@ -104,22 +104,18 @@ include "./components/dashnav.php";
                                                                 <img src="<?php echo $row['postAD']; ?>" class="rounded-1" width="100%" alt="Gig Ad">
                                                             </div>
                                                             <div class="ps-3 ps-sm-4">
-                                                                <h4 class="h6 mb-2"><a href="shop-single.html">Candle in concrete bowl</a></h4>
-                                                                <div class="text-muted fs-sm me-3">Color: <span class="text-dark fw-medium">Gray night</span></div>
+                                                                <h4 class="h6 mb-2">Gig Description:</h4>
+                                                                <p><?php echo $row['gigDescription']; ?></p>
                                                             </div>
                                                         </div>
                                                     </td>
                                                     <td class="border-0 py-1 pe-0 ps-3 ps-sm-4">
-                                                        <div class="fs-sm text-muted mb-2">Quantity</div>
-                                                        <div class="fs-sm fw-medium text-dark">1</div>
+                                                        <div class="fs-sm text-muted mb-2">Pay Out</div>
+                                                        <div class="fs-sm fw-medium text-dark"><?php echo $row['payOut']; ?></div>
                                                     </td>
                                                     <td class="border-0 py-1 pe-0 ps-3 ps-sm-4">
-                                                        <div class="fs-sm text-muted mb-2">Price</div>
-                                                        <div class="fs-sm fw-medium text-dark">$16</div>
-                                                    </td>
-                                                    <td class="border-0 text-end py-1 pe-0 ps-3 ps-sm-4">
-                                                        <div class="fs-sm text-muted mb-2">Total</div>
-                                                        <div class="fs-sm fw-medium text-dark">$16</div>
+                                                        <div class="fs-sm text-muted mb-2">Product Training</div>
+                                                        <div class="fs-sm fw-medium text-dark"><?php echo $row['payOut']; ?></div>
                                                     </td>
                                                 </tr>
                                             </tbody>
@@ -127,16 +123,17 @@ include "./components/dashnav.php";
                                     </div>
                                     <div class="bg-secondary rounded-1 p-4 my-2">
                                         <div class="row">
-                                            <div class="col-sm-5 col-md-3 col-lg-4 mb-3 mb-md-0">
-                                            <div class="fs-sm fw-medium text-dark mb-1">Payment:</div>
-                                            <div class="fs-sm">Upon the delivery</div><a class="btn btn-link py-1 px-0 mt-2" href="#"><i class="ai-time me-2 ms-n1"></i>Order history</a>
+                                            <div class="col-sm-4 col-md-4 col-lg-4 mb-3 mb-md-0">
+                                                <div class="fs-sm fw-medium text-dark mb-1">Website:</div>
+                                                <div class="fs-sm"><?php echo $row['website']; ?></div>
                                             </div>
-                                            <div class="col-sm-7 col-md-5 mb-4 mb-md-0">
-                                            <div class="fs-sm fw-medium text-dark mb-1">Delivery address:</div>
-                                            <div class="fs-sm">401 Magnetic Drive Unit 2,<br>Toronto, Ontario, M3J 3H9, Canada</div>
+                                            <div class="col-sm-4 col-md-4 mb-4 mb-md-0">
+                                                <div class="fs-sm fw-medium text-dark mb-1">Youtube:</div>
+                                                <div class="fs-sm"><?php echo $row['youtubeLink']; ?> <i class="ai-copy text-primary"></i></div>
                                             </div>
-                                            <div class="col-md-4 col-lg-3 text-md-end">
-                                            <button class="btn btn-sm btn-outline-primary w-100 w-md-auto" type="button"><i class="ai-star me-2 ms-n1"></i>Leave a review</button>
+                                            <div class="col-sm-4 col-md-4 mb-4 mb-md-0">
+                                                <div class="fs-sm fw-medium text-dark mb-1">Others:</div>
+                                                <div class="fs-sm"><?php echo $row['otherLink']; ?></div>
                                             </div>
                                         </div>
                                     </div>
