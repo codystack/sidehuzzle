@@ -242,7 +242,7 @@ function _typeof(e) {
                     },
                     format: {
                         to: function(e) {
-                            return "$" + parseInt(e, 10)
+                            return parseInt(e, 10) + "%"
                         },
                         from: function(e) {
                             return Number(e)

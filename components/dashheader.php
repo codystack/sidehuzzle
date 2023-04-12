@@ -141,6 +141,7 @@ if (isset($_GET['logout'])) {
 
         <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css"/>
         <link rel="stylesheet" media="screen" href="assets/vendor/simplebar/dist/simplebar.min.css"/>
+        <link rel="stylesheet" media="screen" href="assets/vendor/nouislider/dist/nouislider.min.css"/>
         <link rel="stylesheet" media="screen" href="assets/vendor/lightgallery/css/lightgallery-bundle.min.css"/>
 
         <link rel="stylesheet" media="screen" href="assets/css/style.css">
