@@ -14,10 +14,7 @@ include "./components/navbarlight.php";
     ?>
     <section class="container py-5 mt-5 mb-sm-2 mb-lg-3 mb-xl-4 mb-xxl-5">
         <h2 class="h1 d-md-none"><?php echo $row['title']; ?></h2>
-        <div class="d-flex d-md-none align-items-center pb-3 mb-3">
-            <div class="h3 mb-0 me-3">$14.00</div>
-            <del class="fs-5 fw-medium text-muted me-3">$19.00</del><span class="badge bg-faded-danger text-danger d-md-none">Sale</span>
-        </div>
+        
         <div class="row pb-sm-1 pb-md-4">
             <!-- Gallery-->
             <div class="col-md-6 gallery mb-3 mb-md-0">
@@ -45,33 +42,13 @@ include "./components/navbarlight.php";
                 <h1 class="d-none d-md-inline-block pb-1 mb-2"><?php echo $row['title']; ?></h1>
                 <p class="fs-sm mb-4"><?php echo $row['gigDescription']; ?></p>
                 <div class="d-none d-md-flex align-items-center pb-3 mb-3">
-                    <div class="h3 mb-0 me-3"><?php echo $row['commission']; ?>%</div>
-                    <del class="fs-5 fw-medium text-muted">$19.00</del>
+                    <div class="h3 mb-0 me-3"><span class="small fw-light fs-5">Commission: </span><?php echo $row['commission']; ?>%</div>
+                </div>
+                <div class="d-flex d-md-none align-items-center pb-3 mb-3">
+                    <div class="h3 mb-0 me-3"><span class="small fw-light fs-5">Commission: </span><?php echo $row['commission']; ?>%</div>
                 </div>
                 <!-- Color button selector-->
                 <div class="h6">Color:<span class="text-muted fw-normal ms-1" id="colorOption">Gray concrete</span></div>
-                <div class="d-flex pb-3">
-                    <div class="me-2 mb-2">
-                    <input class="btn-check" type="radio" name="color" data-binded-label="colorOption" value="Gray concrete" checked id="color1">
-                    <label class="btn btn-icon btn-sm btn-outline-secondary rounded-circle" for="color1"><span class="d-block bg-size-cover bg-position-center rounded-circle" style="width: 1.5rem; height: 1.5rem; background-color: #c0c0c0; background-image: url(../assets/img/shop/pattern/marble.jpg);"></span></label>
-                    </div>
-                    <div class="me-2 mb-2">
-                    <input class="btn-check" type="radio" name="color" data-binded-label="colorOption" value="Soft beige" id="color2">
-                    <label class="btn btn-icon btn-sm btn-outline-secondary rounded-circle" for="color2"><span class="d-block rounded-circle" style="width: 1.5rem; height: 1.5rem; background-color: #d9c9a1;"></span></label>
-                    </div>
-                    <div class="me-2 mb-2">
-                    <input class="btn-check" type="radio" name="color" data-binded-label="colorOption" value="Bluish sky" id="color3">
-                    <label class="btn btn-icon btn-sm btn-outline-secondary rounded-circle" for="color3"><span class="d-block rounded-circle" style="width: 1.5rem; height: 1.5rem; background-color: #a1b7d9;"></span></label>
-                    </div>
-                    <div class="me-2 mb-2">
-                    <input class="btn-check" type="radio" name="color" data-binded-label="colorOption" value="Green grass" id="color4">
-                    <label class="btn btn-icon btn-sm btn-outline-secondary rounded-circle" for="color4"><span class="d-block rounded-circle" style="width: 1.5rem; height: 1.5rem; background-color: #74947d;"></span></label>
-                    </div>
-                    <div class="me-2 mb-2">
-                    <input class="btn-check" type="radio" name="color" data-binded-label="colorOption" value="Woody brown" id="color5">
-                    <label class="btn btn-icon btn-sm btn-outline-secondary rounded-circle" for="color5"><span class="d-block bg-size-cover bg-position-center rounded-circle" style="width: 1.5rem; height: 1.5rem; background-color: #af8352; background-image: url(../assets/img/shop/pattern/wood.jpg);"></span></label>
-                    </div>
-                </div>
                 <!-- Weight button selector-->
                 <div class="h6">Weight</div>
                 <div class="d-flex">
