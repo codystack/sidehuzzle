@@ -74,7 +74,7 @@ include "./components/dashnav.php";
                                 <a class="accordion-button d-flex fs-4 fw-normal text-decoration-none py-3 collapsed" href="#<?php echo $row['accordionID']; ?>" data-bs-toggle="collapse" aria-expanded="false" aria-controls="<?php echo $row['accordionID']; ?>">
                                     <div class="d-flex justify-content-between w-100" style="max-width: 75%;">
                                         <div class="col me-3 me-sm-3">
-                                            <div class="fs-sm text-muted"><?php echo $row['gigID']; ?></div>
+                                            <div class="fs-sm text-muted">#<?php echo $row['gigID']; ?></div>
                                             <span class="badge <?php echo $class; ?> <?php echo $text; ?> fs-xs"><?php echo $status; ?></span>
                                         </div>
                                         <div class="col me-3 me-sm-3">
@@ -115,7 +115,7 @@ include "./components/dashnav.php";
                                                     </td>
                                                     <td class="border-0 py-1 pe-0 ps-3 ps-sm-4">
                                                         <div class="fs-sm text-muted mb-2">Product Training</div>
-                                                        <div class="fs-sm fw-medium text-dark"><?php echo $row['payOut']; ?></div>
+                                                        <div class="fs-sm fw-medium text-dark"><?php echo $row['productTraining']; ?></div>
                                                     </td>
                                                 </tr>
                                             </tbody>

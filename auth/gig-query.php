@@ -7,7 +7,7 @@ include "./config/db.php";
     if (isset($_POST['gig_upload_btn'])) {
 
         $id = $_SESSION['id'];
-        $gigID = '#SH'.rand(100000000, 9999);
+        $gigID = 'SH'.rand(100000000, 9999);
         $accordionID = 'AID'.rand(1000, 9999);
         $userID = $conn->real_escape_string($_POST['userID']);
         $title = $conn->real_escape_string($_POST['title']);

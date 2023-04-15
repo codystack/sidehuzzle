@@ -38,13 +38,13 @@ include "./components/dashnav.php";
             <section class="card border-0 py-1 p-md-2 p-xl-3 p-xxl-4">
                 <div class="card-body">
                     <div class="d-flex align-items-center mt-sm-n1 pb-4 mb-0 mb-lg-1 mb-xl-3"><i class="ai-briefcase text-primary lead pe-1 me-2"></i>
-                        <h2 class="h4 mb-0">Gigs</h2><a class="btn btn-sm btn-secondary ms-auto" href="gigs">View all</a>
+                        <h2 class="h4 mb-0">Top 3 Gigs</h2><a class="btn btn-sm btn-secondary ms-auto" href="gigs">View all</a>
                     </div>
                     
                     <div class="accordion accordion-alt accordion-orders" id="orders">
 
                         <?php
-                            $select_query = "SELECT * FROM gigs WHERE userID = '".$_SESSION['id']."' ORDER BY dateCreated DESC LIMIT 5";
+                            $select_query = "SELECT * FROM gigs WHERE userID = '".$_SESSION['id']."' ORDER BY dateCreated DESC LIMIT 3";
                             $result = mysqli_query($conn, $select_query);
                             if (mysqli_num_rows($result) > 0) {
                                 // output data of each row
@@ -114,7 +114,7 @@ include "./components/dashnav.php";
                                                     </td>
                                                     <td class="border-0 py-1 pe-0 ps-3 ps-sm-4">
                                                         <div class="fs-sm text-muted mb-2">Product Training</div>
-                                                        <div class="fs-sm fw-medium text-dark"><?php echo $row['payOut']; ?></div>
+                                                        <div class="fs-sm fw-medium text-dark"><?php echo $row['productTraining']; ?></div>
                                                     </td>
                                                 </tr>
                                             </tbody>

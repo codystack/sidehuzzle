@@ -37,7 +37,7 @@ require_once "./auth/gig-query.php";
                             </div>
                         </div>
                         <div class="col">
-                            <label class="form-label" for="productTraining">Upload post AD</label>
+                            <label class="form-label" for="productTraining">Upload post AD <span class="small fw-light text-primary">(JPG with H 1000px & W 500px.)</span></label>
                             <input class="form-control" type="file" id="file-input" name="postAD">
                         </div>
                         <div class="col-12 col-lg-12">
