@@ -94,7 +94,7 @@ require_once "./auth/profile-query.php";
                         </div>
                         <div class="col-sm-6">
                             <label class="form-label" for="phone">Phone</label>
-                            <input class="form-control" type="tel" data-format="{&quot;numericOnly&quot;: true, &quot;delimiters&quot;: [&quot;+1 &quot;, &quot; &quot;, &quot; &quot;], &quot;blocks&quot;: [0, 3, 3, 2]}" value="<?php echo $phone;?>" name="phone">
+                            <input class="form-control" type="tel" value="<?php echo $phone;?>" name="phone">
                         </div>
                         <div class="col-12 d-flex justify-content-end pt-3">
                             <button class="btn btn-secondary" type="reset">Cancel</button>

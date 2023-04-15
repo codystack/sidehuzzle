@@ -8,6 +8,7 @@ include "./config/db.php";
 
         $id = $_SESSION['id'];
         $gigID = '#SH'.rand(100000000, 9999);
+        $accordionID = 'AID'.rand(1000, 9999);
         $userID = $conn->real_escape_string($_POST['userID']);
         $title = $conn->real_escape_string($_POST['title']);
         $payOut = $conn->real_escape_string($_POST['payOut']);
@@ -38,8 +39,8 @@ include "./config/db.php";
     
         
         // Finally, gig info if there are no errors in the form
-        $query = "INSERT INTO gigs (userID, gigID, title, payOut, commission, gigDescription, youtubeLink, website, otherLink, productTraining, postAD, status) 
-                    VALUES('$userID', '$gigID', '$title', '$payOut', '$commission', '$gigDescription', '$youtubeLink', '$website', '$otherLink', '$productTraining', '$picture_path', 'Pending')";
+        $query = "INSERT INTO gigs (userID, gigID, accordionID, title, payOut, commission, gigDescription, youtubeLink, website, otherLink, productTraining, postAD, status) 
+                    VALUES('$userID', '$gigID', '$accordionID', '$title', '$payOut', '$commission', '$gigDescription', '$youtubeLink', '$website', '$otherLink', '$productTraining', '$picture_path', 'Pending')";
         mysqli_query($conn, $query);
         if (mysqli_affected_rows($conn) > 0) {
 

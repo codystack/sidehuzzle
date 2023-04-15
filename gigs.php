@@ -41,9 +41,8 @@ include "./components/dashnav.php";
                             unset($_SESSION['success_message']);
                         }
                     ?>
-                    <!-- Orders accordion-->
+                    
                     <div class="accordion accordion-alt accordion-orders" id="orders">
-                        <!-- Order-->
 
                         <?php
                             $select_query = "SELECT * FROM gigs WHERE userID = '".$_SESSION['id']."'";
@@ -72,17 +71,17 @@ include "./components/dashnav.php";
                         
                         <div class="accordion-item border-top mb-0">
                             <div class="accordion-header">
-                                <a class="accordion-button d-flex fs-4 fw-normal text-decoration-none py-3 collapsed" href="#orderOne" data-bs-toggle="collapse" aria-expanded="false" aria-controls="orderOne">
-                                    <div class="d-flex justify-content-between w-100" style="max-width: 440px;">
-                                        <div class="me-3 me-sm-4">
+                                <a class="accordion-button d-flex fs-4 fw-normal text-decoration-none py-3 collapsed" href="#<?php echo $row['accordionID']; ?>" data-bs-toggle="collapse" aria-expanded="false" aria-controls="<?php echo $row['accordionID']; ?>">
+                                    <div class="d-flex justify-content-between w-100" style="max-width: 75%;">
+                                        <div class="col me-3 me-sm-3">
                                             <div class="fs-sm text-muted"><?php echo $row['gigID']; ?></div>
                                             <span class="badge <?php echo $class; ?> <?php echo $text; ?> fs-xs"><?php echo $status; ?></span>
                                         </div>
-                                        <div class="me-3 me-sm-5">
+                                        <div class="col me-3 me-sm-3">
                                             <div class="fs-sm text-muted mb-2">Title</div>
                                             <div class="fs-sm fw-medium text-dark"><h6><?php echo $row['title']; ?></h6></div>
                                         </div>
-                                        <div class="me-3 me-sm-3">
+                                        <div class="col me-3 me-sm-3 ms-sm-5">
                                             <div class="fs-sm text-muted mb-2">Commission</div>
                                             <div class="fs-sm fw-medium text-dark"><?php echo $row['commission']; ?>%</div>
                                         </div>
@@ -92,7 +91,8 @@ include "./components/dashnav.php";
                                     </div>
                                 </a>
                             </div>
-                            <div class="accordion-collapse collapse" id="orderOne" data-bs-parent="#orders" style="">
+
+                            <div class="accordion-collapse collapse" id="<?php echo $row['accordionID']; ?>" data-bs-parent="#orders" style="">
                                 <div class="accordion-body">
                                     <div class="table-responsive pt-1">
                                         <table class="table align-middle w-100" style="min-width: 450px;">
@@ -142,6 +142,11 @@ include "./components/dashnav.php";
                         </div>
                         <?php
                             }
+                        }else {
+                            echo "<div class='text-center'>
+                            <img src='./assets/img/empty.png' alt='empty'>
+                            <h5>No gigs yet! <a class='text-primary' type='button' href='#gigModal' data-bs-toggle='modal'>add new gigs now</a>.</h5>
+                            </div>";
                         }
                         ?>
                     </div>

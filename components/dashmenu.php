@@ -11,9 +11,9 @@
                         </div>
                         <nav class="nav flex-column pb-2 pb-lg-4 mb-3">
                             <h4 class="fs-xs fw-medium text-muted text-uppercase pb-1 mb-2">Dashboard</h4>
-                            <a class="nav-link fw-semibold py-2 px-0 <?php if($page=='Dashboard'){echo 'active';}?>" href="dashboard"><i class="ai-user-check fs-5 opacity-60 me-2"></i>Overview</a>
-                            <a class="nav-link fw-semibold py-2 px-0 <?php if($page=='Gigs'){echo 'active';}?>" href="gigs"><i class="ai-cart fs-5 opacity-60 me-2"></i>Gigs</a>
-                            <a class="nav-link fw-semibold py-2 px-0" href="earnings"><i class="ai-activity fs-5 opacity-60 me-2"></i>Earnings</a>
+                            <a class="nav-link fw-semibold py-2 px-0 <?php if($page=='Dashboard'){echo 'active';}?>" href="dashboard"><i class="ai-dashboard fs-5 opacity-60 me-2"></i>Overview</a>
+                            <a class="nav-link fw-semibold py-2 px-0 <?php if($page=='Gigs'){echo 'active';}?>" href="gigs"><i class="ai-briefcase fs-5 opacity-60 me-2"></i>Gigs</a>
+                            <!-- <a class="nav-link fw-semibold py-2 px-0" href="earnings"><i class="ai-activity fs-5 opacity-60 me-2"></i>Earnings</a> -->
                             <a class="nav-link fw-semibold py-2 px-0  <?php if($page=='Billing'){echo 'active';}?>" href="billing"><i class="ai-wallet fs-5 opacity-60 me-2"></i>Billing</a>
                             <button class="chat-button nav-link fw-semibold py-2 px-0"><i class="ai-messages fs-5 opacity-60 me-2"></i>Support</button>
                             <a class="nav-link fw-semibold py-2 px-0 <?php if($page=='Settings'){echo 'active';}?>" href="settings"><i class="ai-settings fs-5 opacity-60 me-2"></i>Settings</a>
