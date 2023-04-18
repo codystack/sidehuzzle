@@ -92,8 +92,10 @@ include "./components/navbar.php";
 
     <?php include "./components/gigs.php"; ?>
 
+    <?php include "./components/cta.php"; ?>
+
     <section class="container mt-n3 mt-sm-0 pb-5 mb-1 mb-sm-2 mb-lg-3 mb-xl-4 mb-xxl-5 py-5">
-        <h2 class="h1 pb-3 mb-lg-4">Browse our categories</h2>
+        <h2 class="h1 pb-3 mb-lg-4 text-center">Browse our categories</h2>
         <div class="row g-4 pb-2 pb-md-4">
             <div class="col-md-4">
                 <div class="card zoom-effect h-100 border-0 rounded-1 overflow-hidden" style="min-height: 320px;">
@@ -143,9 +145,5 @@ include "./components/navbar.php";
             </div>
         </div>
     </section>
-
-    <?php include "./components/cta.php"; ?>
     
-    <?php include "./components/clients.php"; ?>
-
 <?php include "./components/footer.php"; ?>

@@ -11,9 +11,8 @@
                 </button>
                 <nav class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav navbar-nav-scroll ms-auto me-3" style="--ar-scroll-height: 520px;">
-                        <li class="nav-item"><a class="nav-link" href="how-it-works">How it works</a></li>
-                        <li class="nav-item"><a class="nav-link" href="explore">Explore</a></li>
-                        <li class="nav-item"><a class="nav-link" href="seller">Become a seller</a></li>
+                        <li class="nav-item"><a class="nav-link" href="terms">How it works</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#gigs">Explore</a></li>
                     </ul>
                     <div class="d-sm-none p-3 mt-n3">
                         <a class="btn btn-outline-light w-100  mb-1" href="login">
